@@ -22,4 +22,5 @@ O Angular se conecta ao Hub e exibe mensagens em tempo real.
 ## 🔔Angular
 
 O Angular utiliza o pacote oficial `@microsoft/signalr` para se conectar ao Hub exposto no backend.
+
 Ao receber uma nova mensagem enviada pelo backend, o SignalR aciona o método ReceiveMessage, que adiciona a mensagem na lista renderizada na tela.
