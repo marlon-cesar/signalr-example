@@ -4,5 +4,6 @@ namespace SignalR.Sender
 {
     public class SendMessageHub : Hub
     {
+       
     }
 }
