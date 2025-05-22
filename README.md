@@ -1,26 +1,27 @@
-# SignalR .NET + Angular 
+# SignalR .NET + Angular
 
-Este projeto é um exemplo simples de comunicação em tempo real utilizando **SignalR** com **ASP.NET Core (Minimal APIs)** no backend e **Angular** no frontend.
-
-## 📚 Tecnologias utilizadas
-
-- [.NET 9](https://learn.microsoft.com/aspnet/core)
-- [SignalR](https://learn.microsoft.com/aspnet/core/signalr)
-- [Angular 19](https://angular.io/)
+This project is a simple example of real-time communication using **SignalR** with **ASP.NET Core (Minimal APIs)** on the backend and **Angular** on the frontend.
 
 ---
 
-### ✅ Funcionalidade
-O backend expõe um Hub SignalR em /Hub/SendMessage.
+## 📚 Technologies Used
 
-Um endpoint HTTP (/sendMessage) permite disparar uma mensagem para todos os clientes conectados.
-
-O Angular se conecta ao Hub e exibe mensagens em tempo real.
+- .NET 9  
+- SignalR  
+- Angular 19
 
 ---
 
-## 🔔Angular
+## ✅ Functionality
 
-O Angular utiliza o pacote oficial `@microsoft/signalr` para se conectar ao Hub exposto no backend.
+- The backend exposes a **SignalR Hub** at `/Hub/SendMessage`.
+- An HTTP endpoint (`/sendMessage`) allows sending a message to all connected clients.
+- Angular connects to the Hub and displays messages in real time.
 
-Ao receber uma nova mensagem enviada pelo backend, o SignalR aciona o método ReceiveMessage, que adiciona a mensagem na lista renderizada na tela.
+---
+
+## ⚠️ Angular
+
+Angular uses the official `@microsoft/signalr` package to connect to the backend Hub.
+
+When a new message is sent from the backend, SignalR triggers the `ReceiveMessage` method, which adds the message to the rendered list on the screen.
